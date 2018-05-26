@@ -1,3 +1,4 @@
+ /*  <!-- This file originated from :https://getbootstrap.com/docs/4.1/examples/carousel/ and was modified for this project-->
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
@@ -39,24 +40,31 @@ body {
 -------------------------------------------------- */
 
 /* Center align the text within the three columns below the carousel */
-.marketing .col-lg-4 {
-  margin-bottom: 1.5rem;
+.marketing .aboutme {
+  margin:auto;
+  padding:auto;
   text-align: center;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: auto;
+  max-width: none
 }
 .marketing h2 {
   font-weight: 400;
 }
-.marketing .col-lg-4 p {
+.marketing .aboutme > p {
   margin-right: .75rem;
   margin-left: .75rem;
 }
-
+.marketing .aboutme > img {
+  margin-top: 1rem;
+}
 
 /* Featurettes
 ------------------------- */
 
 .featurette-divider {
-  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
+  margin: 3rem 0; /* Space out the Bootstrap <hr> more */
 }
 
 /* Thin out the marketing headings */
@@ -66,7 +74,7 @@ body {
   letter-spacing: -.05rem;
   margin-left: 1rem;
   margin-right: 1rem;
-   width: 100%;
+  width: 100%;
 }
 
 /* RESPONSIVE CSS
@@ -83,6 +91,7 @@ body {
 
   .featurette-heading {
     font-size: 50px;
+    margin-top:1rem;
   }
 }
 

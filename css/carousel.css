@@ -1,5 +1,4 @@
  /*  <!-- This file originated from :https://getbootstrap.com/docs/4.1/examples/carousel/ and was modified for this project-->
-
 /* GLOBAL STYLES
 -------------------------------------------------- */
 /* Padding below the footer and lighter body text */
@@ -16,52 +15,68 @@ body {
 
 /* Carousel base class */
 .carousel {
-  margin-top: 2rem;
-  margin-bottom: 2rem;
-  margin-left: 15rem;
-  margin-right: 15rem;
+  margin-bottom: 4rem;
 }
 /* Since positioning the image, we need to help out the caption */
 .carousel-caption {
-  bottom: .5rem;
-  left: 1rem;
+  bottom: 1rem;
   z-index: 10;
 }
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 25rem;
+  height: 32rem;
   background-color: #777;
-
 }
 .carousel-item > img {
+  position: absolute;
+  top: 0;
+  left: 0;
   min-width: 100%;
-  height: 25rem;
-  margin:auto;
+  height: 32rem;
 }
 
+/* MARKETING CONTENT
+-------------------------------------------------- */
+
+/* Center align the text within the three columns below the carousel */
+.marketing .aboutme {
+  margin:auto;
+  padding:auto;
+  text-align: center;
+  -ms-flex: 0 0 auto;
+  flex: 0 0 auto;
+  width: auto;
+  max-width: none
+}
+.marketing h2 {
+  font-weight: 400;
+}
+.marketing .aboutme > p {
+  margin-right: .75rem;
+  margin-left: .75rem;
+}
+.marketing .aboutme > img {
+  margin-top: 1rem;
+}
 
 /* Featurettes
 ------------------------- */
 
 .featurette-divider {
-  margin: 5rem 0; 
+  margin: 5rem 0; /* Space out the Bootstrap <hr> more */
 }
 
+/* Thin out the marketing headings */
 .featurette-heading {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -.05rem;
-  padding-left: 1rem;
-  padding-top:1rem;
+  margin-left: 1rem;
+  margin-right: 1rem;
+  width: 100%;
+  margin-top: 1rem;
 }
-
-.featurette > img {
-  min-width: 100%;
-  height: 10rem;
-  margin:auto;
-}
-
 
 /* RESPONSIVE CSS
 -------------------------------------------------- */
@@ -82,6 +97,6 @@ body {
 
 @media (min-width: 62em) {
   .featurette-heading {
-    margin-top: 0rem;
+    margin-top: 1rem;
   }
 }

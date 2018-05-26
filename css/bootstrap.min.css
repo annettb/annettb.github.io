@@ -301,10 +301,11 @@ template {
 
 .h1,.h2,.h3,.h4,.h5,.h6,h1,h2,h3,h4,h5,h6 {
     margin-bottom: .5rem;
+    margin-top: .5rem;
     font-family: inherit;
     font-weight: 500;
     line-height: 1.2;
-    color: inherit
+    color: inherit;
 }
 
 .h1,h1 {
@@ -335,7 +336,8 @@ template {
     font-size: 1.25rem;
     font-weight: 300;
     margin-left: 1rem;
-    ;}
+    margin-top: 1rem;
+    }
 
 .display-1 {
     font-size: 6rem;
